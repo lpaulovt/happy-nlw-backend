@@ -20,15 +20,15 @@ export class createImages1602616272786 implements MigrationInterface {
           },
           {
             name: "orphanage_id",
-            type: "interger",
+            type: "integer",
           },
         ],
         foreignKeys: [
           {
             name: "ImageOrphanage",
             columnNames: ["orphanage_id"],
-            referencedTableName: "orphanages",
             referencedColumnNames: ["id"],
+            referencedTableName: "orphanages",
             onUpdate: "CASCADE",
             onDelete: "CASCADE",
           },
